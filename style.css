@@ -146,7 +146,7 @@ header {
 }
 
 .navbar .action-button:hover {
-    background: #ff6f61;
+    background: #7b798f;
     color: #fafafa;
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(255, 111, 97, 0.5);
@@ -292,7 +292,7 @@ header {
 /* Other Elements */
 .info-icon {
     font-size: 60px;
-    color: #1f3252;
+    color: #1877f2; /* Facebook blue */
     margin: 20px;
     transition: transform 0.3s ease;
 }
