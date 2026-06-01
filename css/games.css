@@ -1,0 +1,173 @@
+.baucua-stats {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.baucua-stats .info-block + .info-block {
+    margin-left: 5%;
+}
+
+.baucua-bet-table,
+.baucua-bet-table th,
+.baucua-bet-table td {
+    border: 1px solid #000;
+    border-collapse: collapse;
+}
+
+.baucua-bet-table th,
+.baucua-bet-table td {
+    padding: 20px;
+    text-align: center;
+}
+
+.baucua-bet-button,
+.start-baucua-button {
+    background: #c3b6e5;
+    border: 2px solid #4a2c2a;
+    border-radius: 10px;
+    padding: 5px;
+    transition: background 0.3s ease;
+}
+
+.baucua-bet-button:hover,
+.start-baucua-button:hover {
+    background: #a1c4fd;
+}
+
+.baucua-picture {
+    max-height: 150px;
+    max-width: 150px;
+    object-fit: cover;
+}
+
+.start-baucua-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 100px;
+    height: 50px;
+}
+
+.baucua-music {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+}
+
+.caro-settings {
+    margin-bottom: 15px;
+}
+
+.caro-board {
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.caro-cell {
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid #c3b6e5;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    color: #1f3252;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.caro-cell:hover {
+    transform: scale(1.05);
+    background: rgba(161, 196, 253, 0.3);
+}
+
+.hidden-cell {
+    background: #222 !important;
+    color: transparent !important;
+    pointer-events: auto;
+}
+
+.status-text {
+    font-size: 1.3rem;
+    margin-top: 15px;
+    color: #fafafa;
+}
+
+.restart-button,
+.size-button {
+    margin-top: 10px;
+    background: #a1c4fd;
+    color: #1f3252;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.restart-button:hover,
+.size-button:hover {
+    background: #ff6f61;
+    color: white;
+}
+
+.caro-select {
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: 2px solid #c3b6e5;
+    background: #f0f0f0;
+}
+
+.caro-input {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.caro-label {
+    color: #fafafa;
+    font-weight: 600;
+}
+
+.caro-label-spaced {
+    margin-left: 15px;
+}
+
+.is-hidden {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .baucua-stats {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .baucua-stats .info-block {
+        width: 100%;
+    }
+
+    .baucua-stats .info-block + .info-block {
+        margin-left: auto;
+    }
+
+    .baucua-bet-table th,
+    .baucua-bet-table td {
+        padding: 10px;
+    }
+
+    .baucua-picture {
+        max-width: 90px;
+        max-height: 90px;
+    }
+}

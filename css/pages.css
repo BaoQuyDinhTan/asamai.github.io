@@ -1,0 +1,105 @@
+.playlist-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto 0;
+}
+
+.song-card {
+    background: rgba(46, 46, 74, 0.9);
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.song-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(161, 196, 253, 0.6);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.game-card-link {
+    display: inline-block;
+    width: 80%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.game-card-link:hover {
+    background-color: aliceblue;
+    box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.8);
+}
+
+.game-preview-image {
+    display: block;
+    width: 100%;
+}
+
+.game-grid {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.game-grid .info-block + .info-block {
+    margin-left: 5%;
+}
+
+@media (max-width: 768px) {
+    .game-grid {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .game-grid .info-block {
+        width: 100%;
+    }
+
+    .game-grid .info-block + .info-block {
+        margin-left: auto;
+    }
+
+    .playlist-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .song-card {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .playlist-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .song-card {
+        padding: 8px;
+    }
+
+    .video-wrapper iframe {
+        border-radius: 8px;
+    }
+}
